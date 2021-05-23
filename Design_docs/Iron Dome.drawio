@@ -1,0 +1,155 @@
+<mxfile host="65bd71144e" pages="2">
+    <diagram id="t6cek9mVNYVDmF_7JW2O" name="System Components">
+        <mxGraphModel dx="1789" dy="1766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="uVsEm6DqayIkY4-9wiOn-18" value="Scanned" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="uVsEm6DqayIkY4-9wiOn-17" target="uVsEm6DqayIkY4-9wiOn-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UrhzViLAPvcLROTH6dVJ-7" value="Launch" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="uVsEm6DqayIkY4-9wiOn-3" target="uVsEm6DqayIkY4-9wiOn-4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UrhzViLAPvcLROTH6dVJ-5" value="Destroy" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="uVsEm6DqayIkY4-9wiOn-4" target="uVsEm6DqayIkY4-9wiOn-17" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="uVsEm6DqayIkY4-9wiOn-13" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="uVsEm6DqayIkY4-9wiOn-1" target="uVsEm6DqayIkY4-9wiOn-2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="668.05" y="-270.97" as="sourcePoint"/>
+                        <mxPoint x="768.05" y="-270.97" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="uVsEm6DqayIkY4-9wiOn-14" value="Rocket Location Data" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="uVsEm6DqayIkY4-9wiOn-13" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UrhzViLAPvcLROTH6dVJ-3" value="Roecket Trajectory prediction" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="uVsEm6DqayIkY4-9wiOn-2" target="uVsEm6DqayIkY4-9wiOn-3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="uVsEm6DqayIkY4-9wiOn-12" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://estonianworld.com/wp-content/uploads/2017/10/radar-shutterstock_391163704.jpg;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="-589.9999999999999" width="164.11" height="115.2" as="geometry"/>
+                </mxCell>
+                <mxCell id="UrhzViLAPvcLROTH6dVJ-2" value="" style="group;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="706" y="-270" width="250" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="uVsEm6DqayIkY4-9wiOn-2" value="&lt;b&gt;TrajactoryProjectionUnit (TPU)&lt;/b&gt;&lt;br&gt;&lt;br&gt;Consume the location time series data and predict the trajectory of the incomming rocket)&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;u&gt;Functionalities Details&lt;/u&gt;&lt;span&gt;:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;ul&gt;&lt;li&gt;Each Radar has it's own TPU and it will continue consume Roject location data and use that to calculate the trajectory of each missile.&lt;/li&gt;&lt;li&gt;Trajectory algorithm was based on the location time series data (X&lt;sub&gt;t&lt;/sub&gt;) and gravity G.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;" parent="UrhzViLAPvcLROTH6dVJ-2" vertex="1">
+                    <mxGeometry width="250" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="uVsEm6DqayIkY4-9wiOn-25" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://qph.fs.quoracdn.net/main-qimg-97d4a2b2a8d1291bf165a38c2d649a5c-c;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="-145.77" width="200" height="115.77" as="geometry"/>
+                </mxCell>
+                <mxCell id="UrhzViLAPvcLROTH6dVJ-8" value="" style="group;gradientColor=#ffa500;fillColor=#ffcd28;strokeColor=#d79b00;" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="265.27" y="-290" width="260" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="uVsEm6DqayIkY4-9wiOn-3" value="&lt;b&gt;Missile Launcher Unit&lt;/b&gt;&lt;br&gt;&lt;br&gt;(Consumed the trajectory data and launch Missile to high priority targets)&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;u&gt;Functionalities Details:&lt;/u&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;ul&gt;&lt;li&gt;Missile launcher unit will launch missile when rocket trajectory feed in if the rocket was considered as high threaten value.&lt;/li&gt;&lt;li&gt;The threaten was calculated based on the rocket target&lt;/li&gt;&lt;li&gt;Each Launcher Unit could launch M missiles at same time with speed V&lt;sub&gt;m&lt;/sub&gt;&amp;nbsp;and launch direction.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;" parent="UrhzViLAPvcLROTH6dVJ-8" vertex="1">
+                    <mxGeometry width="260" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="uVsEm6DqayIkY4-9wiOn-4" value="&lt;b&gt;MissleUnit&lt;/b&gt;&lt;br&gt;&lt;br&gt;(Consumed the control signal and destroy target)&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;Functionalities Details:&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;ul&gt;&lt;li&gt;Assume missile will fly in a constant speed and in straight&lt;/li&gt;&lt;li&gt;Missile will continue scan the range R&lt;sub&gt;m&lt;/sub&gt;&amp;nbsp;and if rocket detected it will explode and destroy the rocket&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#a20025;strokeColor=#6F0000;container=0;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="31" y="-537" width="310" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="UrhzViLAPvcLROTH6dVJ-6" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://th.bing.com/th/id/R8c07d1824d9f135e0334da78c1a81f88?rik=8%2f23NagYECErTQ&amp;riu=http%3a%2f%2fpop.h-cdn.co%2fassets%2f17%2f07%2f1487101474-oxxpl.jpg&amp;ehk=%2bndYZhJ9Gw%2bh2UzoPOQ5dxtCn3xs4HiAOyX9vMT7t7M%3d&amp;risl=&amp;pid=ImgRaw;container=0;" parent="1" vertex="1">
+                    <mxGeometry x="341" y="-537" width="139.7" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="UrhzViLAPvcLROTH6dVJ-15" value="&lt;h1&gt;Iron Dome&amp;nbsp;&lt;/h1&gt;&lt;h1&gt;(铁穹火箭防御系统）&lt;/h1&gt;&lt;p&gt;A rocket intercept system inspired by Israel Iron Dome.&amp;nbsp;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="451" y="-447" width="330" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="UrhzViLAPvcLROTH6dVJ-13" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://armadainternational.com/wp-content/uploads/2018/10/Air-Missile-Defence-Technology.jpg;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="-290" width="235.27" height="157" as="geometry"/>
+                </mxCell>
+                <mxCell id="uVsEm6DqayIkY4-9wiOn-16" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://vid.alarabiya.net/images/2014/07/13/3c9a62ac-b528-46de-b797-bf7d16080ca4/3c9a62ac-b528-46de-b797-bf7d16080ca4_16x9_600x338.jpg;rotation=-180;" parent="1" vertex="1">
+                    <mxGeometry x="301" y="-810.92" width="153.29" height="86.08" as="geometry"/>
+                </mxCell>
+                <mxCell id="uVsEm6DqayIkY4-9wiOn-17" value="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;Rocket&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;span&gt;(Specified Rocket Model with given thrust data and weight)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;u&gt;Functionalities Details:&lt;/u&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;The trust is a constant predefined parameter with three (T&lt;sub&gt;x&lt;/sub&gt;, T&lt;sub&gt;y&lt;/sub&gt;, T&lt;sub&gt;z&lt;/sub&gt;) components.&amp;nbsp;&lt;/li&gt;&lt;li&gt;The next Rocket location X&lt;sub&gt;t1&lt;/sub&gt;&amp;nbsp;is calculated based on the gravity G and Thrust T and current speed V. The initial speed V&lt;sub&gt;0&lt;/sub&gt;&amp;nbsp;is 0&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;align=left;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="31" y="-827" width="270" height="202.28" as="geometry"/>
+                </mxCell>
+                <mxCell id="uVsEm6DqayIkY4-9wiOn-1" value="&lt;b&gt;Radar Unit&lt;br&gt;&lt;/b&gt;&lt;br&gt;(Detect incomming rockets and get location time series data)&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;u&gt;Functionalities Details:&lt;/u&gt;&lt;/div&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left&quot;&gt;Each Radar unit has a fixed location X and detect range R. We can assume the radar can scan all points in the range at same time.&lt;/li&gt;&lt;li style=&quot;text-align: left&quot;&gt;The scanned rocket location will be sent to the TPU at real time.&lt;/li&gt;&lt;li style=&quot;text-align: left&quot;&gt;Assumed each radar could follow at most N target at same time, and when target destroyed or out of range the radar could take new target.&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6d8764;strokeColor=#3A5431;fontColor=#ffffff;container=0;" parent="1" vertex="1">
+                    <mxGeometry x="700" y="-770" width="260" height="290" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="WRG-QioS5F_nbgUIJD9V" name="Radar system">
+        <mxGraphModel dx="1789" dy="939" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="ZTljs47-niaBooZFb6Py-0"/>
+                <mxCell id="ZTljs47-niaBooZFb6Py-1" parent="ZTljs47-niaBooZFb6Py-0"/>
+                <mxCell id="IpiUjHQryHRyjLn4dgbO-1" value="&lt;h1&gt;雷达系统&lt;/h1&gt;&lt;p&gt;雷达系统是整个系统的眼睛，负责探测和捕获来袭火箭的位置数据并持续传输给TPU用于轨迹预测&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="ZTljs47-niaBooZFb6Py-1" vertex="1">
+                    <mxGeometry x="10" y="10" width="190" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="iozYLPgK-WfnD_4r8Pd8-0" value="RaderUnit" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="ZTljs47-niaBooZFb6Py-1" vertex="1">
+                    <mxGeometry x="10" y="560" width="350" height="124" as="geometry"/>
+                </mxCell>
+                <mxCell id="iozYLPgK-WfnD_4r8Pd8-1" value="+ Location&#10;+ DetectRange&#10;+ ScanInterval" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="iozYLPgK-WfnD_4r8Pd8-0" vertex="1">
+                    <mxGeometry y="26" width="350" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="iozYLPgK-WfnD_4r8Pd8-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="iozYLPgK-WfnD_4r8Pd8-0" vertex="1">
+                    <mxGeometry y="90" width="350" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="iozYLPgK-WfnD_4r8Pd8-3" value="+ Subscribe() : List&lt;Positions&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="iozYLPgK-WfnD_4r8Pd8-0" vertex="1">
+                    <mxGeometry y="98" width="350" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="iozYLPgK-WfnD_4r8Pd8-5" value="探测范围" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;dashed=1;fillColor=none;" parent="ZTljs47-niaBooZFb6Py-1" vertex="1">
+                    <mxGeometry x="340" y="100" width="470" height="470" as="geometry"/>
+                </mxCell>
+                <mxCell id="iozYLPgK-WfnD_4r8Pd8-8" value="火箭" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=2;hachureGap=8;fillColor=#990000;fillStyle=dots;sketch=1;dashed=1;" parent="ZTljs47-niaBooZFb6Py-1" vertex="1">
+                    <mxGeometry x="900" y="260" width="90" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="iozYLPgK-WfnD_4r8Pd8-9" value="火箭飞行轨迹" style="curved=1;endArrow=none;html=1;endFill=0;" parent="ZTljs47-niaBooZFb6Py-1" source="iozYLPgK-WfnD_4r8Pd8-15" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="920" y="270" as="sourcePoint"/>
+                        <mxPoint x="190" y="310" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="iozYLPgK-WfnD_4r8Pd8-10" value="" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=2;hachureGap=8;fillColor=#990000;fillStyle=dots;sketch=1;dashed=1;" parent="ZTljs47-niaBooZFb6Py-1" vertex="1">
+                    <mxGeometry x="510" y="240" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="iozYLPgK-WfnD_4r8Pd8-14" value="火箭飞行轨迹" style="curved=1;endArrow=none;html=1;endFill=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="ZTljs47-niaBooZFb6Py-1" source="iozYLPgK-WfnD_4r8Pd8-16" target="iozYLPgK-WfnD_4r8Pd8-10" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="920" y="270" as="sourcePoint"/>
+                        <mxPoint x="260" y="540" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="590" y="240"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="iozYLPgK-WfnD_4r8Pd8-16" value="" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=2;hachureGap=8;fillColor=#990000;fillStyle=dots;sketch=1;dashed=1;" parent="ZTljs47-niaBooZFb6Py-1" vertex="1">
+                    <mxGeometry x="690" y="240" width="50" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="iozYLPgK-WfnD_4r8Pd8-17" value="火箭飞行轨迹" style="curved=1;endArrow=none;html=1;endFill=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="ZTljs47-niaBooZFb6Py-1" target="iozYLPgK-WfnD_4r8Pd8-16" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="919.9999999999998" y="269.9999999999999" as="sourcePoint"/>
+                        <mxPoint x="615.0000000000055" y="249.9999999999999" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="iozYLPgK-WfnD_4r8Pd8-18" value="(x0, y0, z0)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" parent="ZTljs47-niaBooZFb6Py-1" vertex="1">
+                    <mxGeometry x="672.5" y="270" width="85" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="iozYLPgK-WfnD_4r8Pd8-19" value="(x1, y1, z1)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" parent="ZTljs47-niaBooZFb6Py-1" vertex="1">
+                    <mxGeometry x="510" y="210" width="85" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="iozYLPgK-WfnD_4r8Pd8-20" value="(x2, y2, z2)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" parent="ZTljs47-niaBooZFb6Py-1" vertex="1">
+                    <mxGeometry x="392.5" y="310" width="85" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="iozYLPgK-WfnD_4r8Pd8-21" value="" style="shape=crossbar;whiteSpace=wrap;html=1;rounded=1;fillColor=none;" parent="ZTljs47-niaBooZFb6Py-1" vertex="1">
+                    <mxGeometry x="440" y="380" width="120" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="iozYLPgK-WfnD_4r8Pd8-22" value="Detact interval t0" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="ZTljs47-niaBooZFb6Py-1" vertex="1">
+                    <mxGeometry x="445" y="400" width="110" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="iozYLPgK-WfnD_4r8Pd8-15" value="" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=2;hachureGap=8;fillColor=#990000;fillStyle=dots;sketch=1;dashed=1;" parent="ZTljs47-niaBooZFb6Py-1" vertex="1">
+                    <mxGeometry x="410" y="280" width="50" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="iozYLPgK-WfnD_4r8Pd8-24" value="火箭飞行轨迹" style="curved=1;endArrow=none;html=1;endFill=0;" parent="ZTljs47-niaBooZFb6Py-1" source="iozYLPgK-WfnD_4r8Pd8-10" target="iozYLPgK-WfnD_4r8Pd8-15" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="527.3134360400895" y="259.06183139993595" as="sourcePoint"/>
+                        <mxPoint x="190" y="310" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="470" y="300"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

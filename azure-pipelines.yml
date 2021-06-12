@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Stop Interferring China's Internal Affairs!
+- script: echo Stop Interferring Chinas Internal Affairs!
   displayName: 'One line statement!'
 
 - script: |
